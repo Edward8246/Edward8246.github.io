@@ -1,0 +1,257 @@
+@charset "UTF-8";
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap'); /*此為載入google noto字型*/
+body{font-family: 'Noto Sans TC', sans-serif;/*將預設字型設定為noto字型*/ 
+      line-height:1.8; /*設定文字行高與顏色*/
+      color:#333;
+      text-decoration: none;
+      font-size: 20px;
+    }   
+
+.productListOuter{
+    background-color: rgb(255, 255, 255);
+    margin:0 auto;
+   
+}
+
+.productListPic01 img{
+    display: block;
+    margin:0 auto;
+    width: 1200px;
+    height: 207px;
+    margin-top: 140px;
+}
+
+
+
+
+
+
+/*新修***********************************************************************/
+
+
+.productListTOP{
+   padding-top:15px ;
+}
+.productListTOP2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+ 
+    
+}
+
+.productLista1{
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #1B7AAF;
+ 
+}
+.productLista1:hover{
+    background-color:#1B7AAF; 
+    color: white;
+}
+
+.productLista1 a{
+    text-decoration: none;
+    color: inherit;
+    /* align-items: center; */
+     /* align-content: center; */
+     /* width: 200px; */
+     /* display: block; */
+     margin:0 auto;
+     font-size: 32px;
+    
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .productListOuter2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    
+    
+    .productListProducts{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        /* width: 1200px; */
+        width: 100%;
+    }
+
+
+    .productListPic01 img{
+        width: 100%;
+    }
+    .productListOuter{
+        width: 100%;
+    }
+} 
+
+@media screen and (max-width: 414px) {
+    .productListOuter2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    
+    
+    .productListProducts{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        /* width: 1200px; */
+        width: 100%;
+    }
+
+
+    .productListPic01 img{
+        width: 100%;
+    }
+
+    .productListOuter{
+        width: 100%;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************/
+
+.productListOuter2{
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around; */
+}
+
+
+.productListOuter2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    box-sizing: border-box;
+}
+
+
+
+.productListProducts{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1200px;
+}
+.productListProductsThing00{
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around; */
+}
+
+
+
+
+
+
+.productListProductsThing01{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   width: 370px;
+   padding: 30px 0;
+   box-sizing: border-box;
+
+   
+}
+
+.productListProductsThing01 img{
+    width: 279px;
+  
+  
+}
+
+.productListProductsThing02{
+    width: 330px;
+    height: 180px;
+}
+
+
+
+.productListPrice{
+    color: rgb(227, 32, 32);
+}
+
+.productListProducts a{
+    text-decoration: none;
+    color: inherit;
+  
+    
+}
+
+
+
+.productListAddcart{
+    border: solid #333 1px;
+    padding: 5px;
+    margin-top:10px ;
+}
+
+.productListAddcart:hover{
+    background-color:#68C6DB; 
+}
+
+
+
+
+/***底線**************************************************/
+
+.lastbttom ul{
+
+    display: flex;
+    justify-content: center;
+}
+
+.lastbttom li{
+    padding-right: 10px;
+    padding-bottom: 50px;
+}
+
+.lastbttom a{
+   border: solid 1px #333;
+   padding: 5px;
+}
+
+.lastbttom a:hover{
+color: azure;
+background-color: #333;
+ }
+

@@ -1,0 +1,243 @@
+@charset "UTF-8";
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap'); /*此為載入google noto字型*/
+body{font-family: 'Noto Sans TC', sans-serif;/*將預設字型設定為noto字型*/ 
+      line-height:1.8; /*設定文字行高與顏色*/
+      color:#333;
+      text-decoration: none;
+      font-size: 20px;
+    }  
+
+
+.travel00{
+    margin: 0 auto;
+    
+}
+
+
+.travelBG{
+    height: 876px;
+    width: 100%;
+    background-image:url(../img/complex.png); 
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/* 首頁第五層***************************************************************/
+.travelFloor{width: 1200px;
+    margin:0 auto;
+   }
+   .travelIntro{
+     text-align:center;
+     margin:50px auto;
+     font-size: 32px;
+     font-weight: bold;
+ 
+     width: 500px;
+     border-bottom:1px solid #333;
+   
+   }
+ 
+ /* 01********************/
+ .traveT01{ display: flex;
+     /* border-bottom:4px dotted #009FCC */
+     /* border-bottom:1px solid #333; */
+     padding:30px ;
+     box-sizing: border-box;
+     }
+ .traveT01 img{
+ width: 600px;
+ height: 375px;
+ }
+ .traveT01Word{
+     margin:50px auto;
+     width: 500px;
+ }
+ .traveT01Word01{
+  font-size: 32px;
+  text-align:center;
+ }
+ .traveT01Word02{
+ font-size: 20px;
+ }
+ /* 02********************/
+ .traveT02{ display: flex;
+     /* border-bottom:4px dotted #009FCC */
+     /* border-bottom:1px solid #333; */
+     padding:30px ;
+     box-sizing: border-box
+     }
+ .traveT02 img{
+ width: 600px;
+ height: 375px;
+ }
+ .traveT02Word{
+     margin:50px auto;
+     width: 500px;
+ }
+ .traveT02Word01{
+  font-size: 32px;
+  text-align:center;
+ }
+ .traveT02Word02{
+ font-size: 20px;
+ }
+ /* 03********************/
+ .traveT03{ display: flex;
+     /* border-bottom:4px dotted #009FCC */
+     /* border-bottom:1px solid #333; */
+     padding:30px ;
+     box-sizing: border-box
+     }
+ .traveT03 img{
+ width: 600px;
+ height: 375px;
+ }
+ .traveT03Word{
+     margin:50px auto;
+     width: 500px;
+ }
+ .traveT03Word01{
+  font-size: 32px;
+  text-align:center;
+ }
+ .traveT03Word02{
+ font-size: 20px;
+ }
+ 
+ /* 04********************/
+ .traveT04{ display: flex;
+    padding:30px ;
+    box-sizing: border-box
+     }
+ .traveT04 img{
+ width: 600px;
+ height: 375px;
+ }
+ .traveT04Word{
+     margin:50px auto;
+     width: 500px;
+ }
+ .traveT04Word01{
+  font-size: 32px;
+  text-align:center;
+ }
+ .traveT04Word02{
+ font-size: 20px;
+ }
+
+ /* 05********************/
+ .traveT05{ display: flex;
+    padding:30px ;
+    box-sizing: border-box
+     }
+ .traveT05 img{
+ width: 600px;
+ height: 375px;
+ }
+ .traveT05Word{
+     margin:50px auto;
+     width: 500px;
+ }
+ .traveT05Word01{
+  font-size: 32px;
+  text-align:center;
+ }
+ .traveT05Word02{
+ font-size: 20px;
+ }
+
+
+
+
+ /* RWD 手機適配模式 */
+ @media screen and (max-width: 414px) {
+    .travelIntro{
+        margin:0 auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .travelFloor {
+        width: 100%;
+        margin:0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    
+    .traveT01,
+    .traveT02,
+    .traveT03,
+    .traveT04,
+    .traveT05 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .traveT01 img,
+    .traveT02 img,
+    .traveT03 img,
+    .traveT04 img,
+    .traveT05 img {
+        width: 70%;
+        height: auto;
+    }
+    
+    .traveT01Word,
+    .traveT02Word,
+    .traveT03Word,
+    .traveT04Word,
+    .traveT05Word
+     {
+        margin: 0 auto;
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .travelIntro{
+        margin:0 auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+    }
+    .travelFloor {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+      
+    }
+    .traveT01,
+    .traveT02,
+    .traveT03,
+    .traveT04,
+    .traveT05 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .traveT01Word,
+    .traveT02Word,
+    .traveT03Word,
+    .traveT04Word,
+    .traveT05Word {
+        margin: 0 auto;
+        width: 100%;
+        font-size: 14px;
+    }
+    .traveT01 img,
+    .traveT02 img,
+    .traveT03 img,
+    .traveT04 img,
+    .traveT05 img {
+        width: 85%;
+        height: auto;
+    }
+}

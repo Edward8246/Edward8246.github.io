@@ -1,0 +1,398 @@
+@charset "UTF-8";
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap'); /*此為載入google noto字型*/
+body{font-family: 'Noto Sans TC', sans-serif;/*將預設字型設定為noto字型*/ 
+      line-height:1.8; /*設定文字行高與顏色*/
+      color:#333;
+      text-decoration: none;
+      font-size: 20px;
+    }   
+
+
+/*  text-align:left;　//向左對齊
+    text-align:right;　//向右對齊
+    text-align:center;　//置中
+    text-align:justify;　//使左右對齊本文
+    text-align:inherit;　//繼承父元素的 text-align 屬性*/
+
+/* ------------- header ------------- */
+
+.header{  
+  height: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;}
+/* ------------- header第一層 ------------- */
+.outer1{  background-color:#ffffff; }
+.top1{
+  width: 1200px;
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  display: flex; 
+  margin: 0 auto; 
+  justify-content: space-between;
+}
+
+.selul01 {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  /* justify-content: space-between; */
+  /* justify-content: center; */
+  justify-content: space-around;
+  font-size: 20px;
+  margin-top:15px ;
+  font-weight: bold;
+}
+.selul01 li{
+  margin: 0 15px; /* 調整列表項目之間的距離，此處設置為10px */
+}
+
+.selul01 a{
+  text-decoration: none;
+  color: inherit; 
+}
+
+
+
+
+
+/*2**********************************************************************************/
+.logo img{
+  display: block;
+  width: 195px;
+  height: 72px;
+  margin-top:4px ;
+  margin-left:35px ;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+/* default css end */
+
+
+/* navbar regular css start */
+.navbar-area {
+  /* background: rgba(0,0,0,.6); */
+  background-color: rgb(255, 255, 255);
+  /* border-bottom: 1px solid #000; */
+}
+.site-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a.site-logo {
+  font-size: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+.site-navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  font-weight: bold;
+}
+.site-navbar ul li a {
+  color: #333;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.fa-cart-shopping{
+  color: #333
+}
+.fa-user{
+  color: #333
+}
+
+
+.site-navbar ul li a:hover {
+  background: rgba(255,255,255,.1);
+}
+/* navbar regular css end */
+
+
+/* nav-toggler css start */
+.nav-toggler {
+  border: 3px solid #333;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  height: 39px;
+  display: none;
+}
+.nav-toggler span, 
+.nav-toggler span:before, 
+.nav-toggler span:after {
+  width: 28px;
+  height: 3px;
+  background-color: #333;
+  display: block;
+  transition: .3s;
+}
+.nav-toggler span:before {
+  content: '';
+  transform: translateY(-9px);
+}
+.nav-toggler span:after {
+  content: '';
+  transform: translateY(6px);
+}
+.nav-toggler.toggler-open span {
+  background-color: transparent;
+}
+.nav-toggler.toggler-open span:before {
+  transform: translateY(0px) rotate(45deg);
+}
+.nav-toggler.toggler-open span:after {
+  transform: translateY(-3px) rotate(-45deg);
+}
+/* nav-toggler css start */
+
+
+
+/* mobile breakpoint start */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  /* navbar css for mobile start */
+  .nav-toggler{
+    display: block;
+  }
+  .site-navbar {
+    min-height: 60px;
+  }
+  .site-navbar ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 60px);
+    left: 0;
+    top: 70px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0,0,0,.75);
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s;
+  }
+  .site-navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .site-navbar ul li a {
+    padding: 25px;
+    color: #fff;
+  }
+  .fa-cart-shopping{
+    color: #ffffff
+  }
+  .fa-user{
+    color: #ffffff
+  }
+
+
+  .site-navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .site-navbar ul.open {
+    max-height: 100vh;
+    overflow: visible;
+  }
+
+}
+/* mobile breakpoint end */
+
+
+
+@media screen and (max-width: 414px) {
+  .container {
+    max-width: 414px;
+  }
+  /* navbar css for mobile start */
+  .nav-toggler{
+    display: block;
+  }
+  .site-navbar {
+    min-height: 60px;
+  }
+  .site-navbar ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 60px);
+    left: 0;
+    top: 70px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0,0,0,.75);
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s;
+  }
+  .site-navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .site-navbar ul li a {
+    padding: 25px;
+    color: #fff;
+  }
+  .fa-cart-shopping{
+    color: #ffffff
+  }
+  .fa-user{
+    color: #ffffff
+  }
+
+
+  .site-navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .site-navbar ul.open {
+    max-height: 100vh;
+    overflow: visible;
+  }
+
+  /* navbar css for mobile end */
+}
+
+
+
+
+
+
+
+/* ------------- header第二層 ------------- */
+.outer2{  background-color:#1B7AAF; 
+
+}
+.top2{
+  width: 1200px;
+  height: 30px;
+  /* background-color: rgb(255, 255, 255); */
+  background-color:#68C6DB; 
+  display: flex; 
+  margin: 0 auto; 
+ 
+}
+
+.search-bar{width: 200px;}
+.search-btn{width: 25px;
+background-color: white;
+}
+
+
+
+
+
+
+
+
+/* ------------- Footer ------------- */
+.footer{
+  background-color: #84d3f8;
+  width: 100%;
+
+  margin: 0 auto;
+ 
+}
+
+.footerDiv{
+  width: 1200px;
+  display: flex;
+  margin:0 auto;
+  justify-content: space-between;
+}
+
+
+.LOGOword img{
+  display: block;
+  width: 220px;
+  margin: 0 auto;
+padding-top:20px ;
+  
+}
+
+
+.footerword {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  /* justify-content: space-between; */
+  /* justify-content: center; */
+  justify-content: space-around;
+  font-size: 24px;
+  margin-top:40px ;
+  font-weight: bold;
+
+}
+.footerword li{
+  margin: 0 15px; /* 調整列表項目之間的距離，此處設置為10px */
+}
+
+.footerword a{
+  text-decoration: none;
+  color: inherit; 
+}
+
+.media{
+  margin-top: 15px;
+}
+
+.GGDFDFDF{
+  font-size: 12px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .footerDiv{
+    width: 100%;
+    display: flex;
+    margin:0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .media{
+    display: none;
+  }
+} 
+
+@media screen and (max-width: 414px) {
+  .footerDiv{
+    width: 100%;
+    display: flex;
+    margin:0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .media{
+    display: none;
+  }
+
+  .footerword{
+    font-size: 14px;
+  }
+
+} 
+
+.GGDFDFDF{
+  font-size: 12px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+}

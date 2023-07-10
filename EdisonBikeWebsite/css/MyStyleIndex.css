@@ -1,0 +1,1305 @@
+@charset "UTF-8";
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Yuji+Hentaigana+Akebono&display=swap');
+body{font-family: 'Noto Sans TC', sans-serif;/*將預設字型設定為noto字型*/ 
+      line-height:1.8; /*設定文字行高與顏色*/
+      color:#333;
+      text-decoration: none;
+      font-size: 20px;
+    }   
+
+ /* 首頁第一層 倫波圖***************************************************************/
+.oneFloor{
+    height: 961px;
+    width: 100%;
+    background-image:url(../img/MAIN2.png); 
+    background-size: cover;
+    margin-top: 110px;
+    position: relative;
+    margin:0 auto;
+}
+.oneWord{
+    position: absolute;
+    left: 489px;
+	top: 180px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.oneFloor a{
+ 
+    background-color: #0070bb;
+	color: white;
+	text-decoration: none;
+	display: block;
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+    position: absolute;
+    left: 489px;
+	top: 339px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.oneFloor a:hover{
+    background-color: #84d3f8;  ; 
+	color: #333;
+}
+
+
+/*2************************************************************************/
+.carousel {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    
+    max-width: 1600px;
+    margin: 0px auto;
+   
+    /* padding-bottom:30px ; */
+}
+
+.carousel2 {
+  position: relative;
+  height: 870px;
+  width: 100%;
+  
+  max-width: 1600px;
+  margin: 0px auto;
+ 
+  /* padding-bottom:30px ; */
+}
+
+
+.carousel__slide {
+   width: 1600px;
+   /* height: 870px; */
+}
+
+.carousel__image {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+  
+}
+
+.school-talks-img-6 {
+    object-position: 50% 5%;
+}
+
+.carousel__track-container {
+    height: 100%;
+   
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 700ms ease-in;
+    pointer-events: none;
+  
+}
+
+
+.carousel__slide {
+    position: absolute; /* stack images on top of each other */
+    top: 0;
+    bottom: 0;
+    height: 720px;
+    width: 100%;
+}
+
+.carousel__slide2 {
+  position: absolute; /* stack images on top of each other */
+  top: 0;
+  bottom: 0;
+  height: 870px;
+  width: 100%;
+}
+
+
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel__button img:hover, .carousel__nav button:hover {
+    transform: scale(1.2);
+    transition: all ease-in 0.2s;
+}
+
+
+.carousel__button--left {
+    left: -40px; /* position away from image */
+}
+
+.carousel__button--right {
+    right: -40px;
+}
+
+
+
+.carousel__button img {
+    width: 30px;
+}
+
+.carousel__button:focus, .carousel__indicator:focus {
+  outline: none;
+}
+
+.carousel__nav {
+    display: flex;
+    justify-content: center;
+    /* padding: 10px 0; */
+    margin: -30px auto;
+    box-sizing: border-box;
+    z-index: 1;
+  
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    
+    margin: 0 12px;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+
+.carousel__indicator2 {
+  border: 0;
+  border-radius: 50px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  
+  margin: 0 12px;
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.carousel__indicator.current-slide {
+    background: rgba(0,0,0,.75);
+}
+.carousel__indicator2.current-slide {
+  background: rgba(0,0,0,.75);
+}
+
+
+/* resize images for different screen sizes */
+
+
+
+
+@media screen and (max-width: 1440px) {
+    .carousel {
+        height: 720px;
+        max-width: 1000px;
+        margin: 0 auto
+
+
+    }
+    .carousel__slide {
+     
+       height: 720px;
+       width: 1000px;
+       margin: 0 auto
+    }   
+
+    .carousel2 {
+      height: 720px;
+      max-width: 1000px;
+      margin: 0 auto
+
+
+  }
+  .carousel__slide2 {
+   
+     height: 720px;
+     width: 1000px;
+     margin: 0 auto
+  }  
+
+
+
+
+
+} 
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        height: 350px;
+        max-width: 550px;
+    }
+    .carousel__slide {
+      height: 350px;
+       width:550px;
+     
+    }   
+    .carousel__nav {
+        display: none;
+    } 
+
+
+    .carousel2 {
+      height: 350px;
+      max-width: 550px;
+  }
+  .carousel__slide2 {
+    height: 350px;
+     width:550px;
+   
+  }   
+} 
+
+@media screen and (max-width: 414px) {
+    .carousel {
+        height: 300px;
+        max-width: 300px;
+    }
+    .carousel__slide {
+       width: 300px;
+       height: 300px;
+    }   
+    .carousel__nav {
+        display: none;
+    } 
+
+    .carousel2 {
+      height: 300px;
+      max-width: 300px;
+  }
+  .carousel__slide2 {
+     width: 300px;
+     height: 300px;
+  }   
+} 
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* 首頁第二層 箱子***************************************************************/
+ .twoFloor{
+    /* background-image:url(../img/1659460_FIGMA1.png);  */
+    /* background-color:#68C6DB;  */
+    
+    background-color: #fff;
+    background-size: cover;
+    height: 280px;
+    width: 100%;
+    margin:0 auto;
+ }
+ .twoFloor1C{
+    display: flex;
+ }
+.twoFloor1D{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px auto;
+    /* margin-top:2px ;
+    margin-left:50px; */
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.twoFloor1D img{
+    border:solid 5px hsla(0, 0%, 100%, .5) ; 
+    width: 200px;
+    height: 200px;
+}
+
+
+.twoFloor1D li{
+    margin: 0 10px;
+}
+
+
+.twoFloor1D img:hover{
+    border:solid 5px #0070bb; 
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .twoFloor1D img{
+        
+        width: 175px;
+        height: 175px;
+    }
+} 
+
+@media screen and (max-width: 414px) {
+    .twoFloor1D img{
+       
+        width: 100px;
+        height: 100px;
+    }
+} 
+
+
+/*卡片************************************************************************/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+a:link,
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+  font-weight: 300;
+  line-height: 1.7;
+  letter-spacing: .08rem;
+}
+
+.pricing {
+  text-align: center;
+  padding: 4rem;
+  background-color: #eee;
+}
+
+.row {
+  max-width: 60rem;
+  margin: 0 auto; 
+}
+.row:not(:last-child) { margin-bottom: 8rem; }
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+.row [class^="col-"] { float: left; }
+/* .row [class^="col-"] { 
+  
+ display: flex;
+justify-content: center;
+
+} */
+.row [class^="col-"]:not(:last-child) { margin-right: 3rem; }
+
+.row .col-1-of-3 { width: 18rem; }
+
+
+@media screen and (max-width: 768px) {
+  .row {
+    /* max-width: 30rem; */
+    margin: 0 auto; 
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .row .col-1-of-3 { width: 18rem; }
+  .row [class^="col-"] { float: center; }
+
+} 
+
+@media screen and (max-width: 414px) {
+  .row {
+    /* max-width: 25rem; */
+    margin: 0 auto; 
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .row .col-1-of-3 { width: 15rem; }
+  .row [class^="col-"] { float: center; }
+} 
+
+
+
+
+
+
+
+.card {
+  -moz-perspective: 300rem;
+  perspective: 300rem;
+  position: relative;
+  height: 30rem;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.card__side {
+  height: 30rem;
+  transition: all 1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+
+.card__side--front {
+  background-color: #fff; }
+ 
+.card__side--back {
+  transform: rotateY(180deg); }
+
+.card__side--back-1 {
+  background-image: linear-gradient(to right bottom, #ffc93c, #f07b3f); }
+
+.card__side--back-2 {
+  background-image: linear-gradient(to right bottom, #30e3ca, #11999e); }
+
+.card__side--back-3 {
+  background-image: linear-gradient(to right bottom, #e84545, #903749); }
+
+.card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+
+.card:hover .card__side--back {
+  transform: rotateY(0); }
+
+.card__pic {
+  width: calc(100% - 2rem);
+  height: 10rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background-size: cover;
+}
+
+.card__pic--1 {
+  background-image: url('../img/chalkida-2375248_1920.jpg');
+}
+
+.card__pic--2 {
+  background-image: url('../img/photo-1534150034764-046bf225d3fa.jpg'); 
+}
+
+.card__pic--3 {
+  background-image: url('../img/bicycle-ge1b6dd222_1280.jpg'); 
+}
+
+.card__heading {
+  position: absolute;
+  top: 8rem;
+  right: 1rem;
+  color: #fff;
+  width: 65%;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.card__heading span {
+  padding: .3rem 1.5rem;
+  box-decoration-break: clone;
+}
+
+.card__h-span-1 { background-image: linear-gradient(to right bottom, rgba(255, 201, 60, 0.8), rgba(240, 123, 63, 0.8)); }
+
+.card__h-span-2 { background-image: linear-gradient(to right bottom, rgba(48, 227, 202, 0.8), rgba(17, 153, 158, 0.8)); }
+
+.card__h-span-3 { background-image: linear-gradient(to right bottom, rgba(232, 69, 69, 0.8), rgba(144, 55, 73, 0.8)); }
+
+span.card__span-mountain {
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.card__details {
+  color: #777;
+  font-size: .9rem;
+  margin-top: -5rem;
+  padding-top: 6rem;
+  padding-bottom: 1rem;
+}
+.card__details ul {
+  width: 60%;
+  margin: auto;
+}
+
+.card__details li:not(:last-child) {
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.card__side2-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__price {
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 4rem;
+}
+
+.card__price-value {
+  font-size: 3.2rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: .8rem 1.6rem;
+  border-radius: 2rem;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active,
+.btn:focus {
+  transform: translateY(0);
+}
+
+.btn--white {
+  background-color: #fff;
+}
+
+
+ 
+.card__price-only{
+font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* 首頁第五層車種介紹***************************************************************/
+  .fiveFloor{width: 1200px;
+   margin:0 auto;
+  }
+  .fiveIntro{
+    text-align:center;
+    margin:50px auto;
+    font-size: 32px;
+    font-weight: bold;
+
+    width: 1200px;
+    border-bottom:1px solid #333;
+  
+  }
+
+/* 01********************/
+.EBike{ display: flex;
+    /* border-bottom:4px dotted #009FCC */
+    border-bottom:1px solid #333;
+   
+    }
+.EBike img{
+width: 500px;
+height: 375px;
+}
+.EBikeWord{
+    margin:50px auto;
+    width: 500px;
+}
+.EBikeWord01{
+ font-size: 32px;
+ text-align:center;
+}
+.EBikeWord02{
+font-size: 20px;
+}
+/* 02********************/
+.MountainBike{ display: flex;
+    /* border-bottom:4px dotted #009FCC */
+    border-bottom:1px solid #333;
+    }
+.MountainBike img{
+width: 500px;
+height: 375px;
+}
+.MountainBikeWord{
+    margin:50px auto;
+    width: 500px;
+}
+.MountainBikeWord01{
+ font-size: 32px;
+ text-align:center;
+}
+.MountainBikeWord02{
+font-size: 20px;
+}
+/* 03********************/
+.RoadBike{ display: flex;
+    /* border-bottom:4px dotted #009FCC */
+    border-bottom:1px solid #333;
+    }
+.RoadBike img{
+width: 500px;
+height: 375px;
+}
+.RoadBikeWord{
+    margin:50px auto;
+    width: 500px;
+}
+.RoadBikeWord01{
+ font-size: 32px;
+ text-align:center;
+}
+.RoadBikeWord02{
+font-size: 20px;
+}
+
+/* 04********************/
+.GravelBike{ display: flex;
+   
+    }
+.GravelBike img{
+width: 500px;
+height: 375px;
+}
+.GravelBikeWord{
+    margin:50px auto;
+    width: 500px;
+}
+.GravelBikeWord01{
+ font-size: 32px;
+ text-align:center;
+}
+.GravelBikeWord02{
+font-size: 20px;
+}
+
+
+ /* RWD 手機適配模式 */
+ @media screen and (max-width: 414px) {
+    .fiveIntro{
+        margin:0 auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+    }
+    .fiveFloor {
+        width: 100%;
+        margin:0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    
+    .EBike,
+    .MountainBike,
+    .RoadBike,
+    .GravelBike {
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .EBike img,
+    .MountainBike img,
+    .RoadBike img,
+    .GravelBike img {
+        width: 70%;
+        height: auto;
+    }
+    
+    .EBikeWord,
+    .MountainBikeWord,
+    .RoadBikeWord,
+    .GravelBikeWord {
+        margin: 0 auto;
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fiveIntro{
+        margin:0 auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .fiveFloor {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+      
+    }
+    .EBike,
+    .MountainBike,
+    .RoadBike,
+    .GravelBike {
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .EBikeWord,
+    .MountainBikeWord,
+    .RoadBikeWord,
+    .GravelBikeWord {
+        margin: 0 auto;
+        width: 100%;
+        font-size: 14px;
+    }
+    .EBike img,
+    .MountainBike img,
+    .RoadBike img,
+    .GravelBike img {
+        width: 85%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 首頁第六層***************************************************************/
+
+/*CARD RWD*************************************************************/
+  /* 新增媒體查詢 */
+  @media screen and (max-width: 414px) {
+    .sixFloor {
+        height: auto;
+       
+        width: 100%;
+       
+    }
+
+    #card0 {
+        position: static;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    #card {
+        width: 100%;
+        /* max-width: 375px; */
+        height: auto;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    .sixFloor {
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    #card0 {
+        position: static;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+      
+    }
+
+    #card {
+        width: 100%;
+        /* max-width: 450px; */
+        height: auto;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
+
+
+
+
+
+/* @media screen and (max-width: 768px) {
+
+    #card0 {
+        perspective:8000px;
+        perspective-origin:center center;
+        position:absolute;
+    
+        }
+    #card{
+      
+        width:450px;
+        height:650px;
+        
+        margin: auto;
+      
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+            
+        }
+} 
+
+@media screen and (max-width: 414px) {
+    #card0 {
+        perspective:8000px;
+        perspective-origin:center center;
+        position:absolute;
+    
+        }
+    #card{
+        
+        width:450px;
+        height:650px;
+
+        margin: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+ 
+            
+        }
+}  */
+/*CARD*************************************************************************/
+
+.sixFloor{ 
+    background-image:url(../img/CardBack.png); 
+    background-size: cover;
+    height: 872px;
+    width: 100%;
+    margin:0 auto;
+    position:relative;
+  
+}
+
+
+#card0 {
+    perspective:8000px;
+    perspective-origin:center center;
+    position:absolute;
+  
+    /* left: 450px;
+   
+    box-sizing: border-box; */
+    padding-top: 150px;
+    position: static;
+    display: flex;
+    justify-content: center;
+    }
+
+   #card{
+    width:300px;
+    height:430px;
+    box-shadow:8px 8px 10px #999;
+    
+    /* margin:180px 400px; */
+    cursor:pointer;
+    transform-origin:center center;
+    
+    /*transform-style: flat, preserve-3d*/
+    /*flat:default, 子元件不保留3D座標。
+      preserve-3d:子物件會保留3D座標*/
+    transform-style:preserve-3d;
+    transition:all 2s;
+        
+    }
+    
+    #card.flip{
+    box-shadow:-8px 8px 10px #999;
+    transform:rotateY(180deg);
+    }
+    
+    
+    #cover{
+    width:300px;
+    height:430px;
+    background:#EEE url(../img/cover.jpg) no-repeat;
+    background-size:275px 405px;
+    background-position:center center;
+    box-shadow:inset 0 0 8px #999;
+    position:absolute;
+    backface-visibility:hidden;
+        
+    }
+    
+    #inside{
+
+        
+    width:300px;
+    height:430px;
+    background:#EEE url(../img/inside.jpg) no-repeat;
+    background-size:275px 405px;
+    /*background-size:cover; */
+    background-position:center center;
+    box-shadow:inset 0 0 8px #999;
+    position:absolute;
+    transform-style:preserve-3d;
+    transform:rotateY(180deg);
+    backface-visibility:hidden;
+        
+    }
+        
+    #inside img{
+     width:110px;
+    height:110px;
+    margin-left:-35px;
+    margin-top:-50px;
+    backface-visibility:hidden;
+    transform-style:preserve-3d;
+    transform:translateZ(70px);
+        
+    } 
+
+/*首頁單車移動***********************************************************************************/	
+
+
+.lovewithbike{
+    width: 100%;
+	margin: 0px auto;
+}
+
+
+
+.anim1{
+	background-image: url(../img/outerspace7.png);
+    height: 765px;
+    width: 100%;
+    position: relative;
+	overflow: hidden;
+    margin: 0 auto;
+}
+
+.anim1 img{
+    width:420px;height:273px;
+}
+
+  .car1{
+	position: absolute;
+	right: -150px;
+	bottom: 20px;
+
+	animation: car1 20s linear infinite;
+}
+
+@keyframes car1{
+	0%{
+		left: -350px;
+	}
+	100%{
+		left: 1900px;
+	}
+}
+
+.lovewithbikeWord01{
+    font-family: 'Caveat', cursive;
+    font-size: 90px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+
+
+/* Example 3 */
+.lovewithbikeWord01 {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #5271ff,
+        0 0 82px #5271ff,
+        0 0 92px #5271ff,
+        0 0 102px #5271ff,
+        0 0 151px #5271ff;
+      /* animation: pulsate3 0.11s ease-in-out infinite alternate; */
+  }	
+  /* @keyframes pulsate3 {
+      
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #5271ff,
+        0 0 80px #5271ff,
+        0 0 90px #5271ff,
+        0 0 100px #5271ff,
+        0 0 150px #5271ff;
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px #fff,
+      0 0 38px #5271ff,
+      0 0 73px #5271ff,
+      0 0 80px #5271ff,
+      0 0 94px #5271ff,
+      0 0 140px #5271ff;
+  
+      }
+  } */
+  @media screen and (max-width: 768px) {
+    .lovewithbike{
+      width: 100%;
+      box-sizing: border-box;
+        margin: 0px auto;
+    }
+    @keyframes car1{
+        0%{
+            left: -380px;
+        }
+        100%{
+            left: 740px;
+        }
+    }
+
+    .lovewithbikeWord01{
+        font-family: 'Caveat', cursive;
+        font-size: 70px;
+        /* width: 700px; */
+        width: 100%;
+        margin: 0 auto;
+    }
+} 
+
+@media screen and (max-width: 414px) {
+    .lovewithbike{
+      width: 100%;
+      box-sizing: border-box;
+        margin: 0px auto;
+    }
+    @keyframes car1{
+        0%{
+            left: -50px;
+        }
+        100%{
+            left: 300px;
+        }
+    }
+    .lovewithbikeWord01{
+        font-family: 'Caveat', cursive;
+        font-size: 50px;
+        /* width: 300px; */
+        width: 100%;
+        margin: 0 auto;
+    }
+} 
+
+
+
+
+
+/*6.5CARD最後嘗試***********************************************************************************/	
+
+
+
+  .CARD65{
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    /* for touch screen */
+    touch-action: none; 
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #111;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  
+  #drag-container, #spin-container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transform: rotateX(-10deg);
+            transform: rotateX(-10deg);
+  }
+  
+  #drag-container img, #drag-container video {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 200px;
+    font-size: 50px;
+    text-align: center;
+    -webkit-box-shadow: 0 0 8px #fff;
+            box-shadow: 0 0 8px #fff;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+  }
+  
+  #drag-container img:hover, #drag-container video:hover {
+    -webkit-box-shadow: 0 0 15px #fffd;
+            box-shadow: 0 0 15px #fffd;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+  }
+  
+  #drag-container p {
+    font-family: Serif;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%) rotateX(90deg);
+            transform: translate(-50%,-50%) rotateX(90deg);
+    color: #fff;
+  }
+  
+  #ground {
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%) rotateX(90deg);
+            transform: translate(-50%,-50%) rotateX(90deg);
+    background: -webkit-radial-gradient(center center, farthest-side , #9993, transparent);
+  }
+  
+  #music-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  
+  @-webkit-keyframes spin {
+    from{
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg);
+    } to{
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    from{
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg);
+    } to{
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+  @-webkit-keyframes spinRevert {
+    from{
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    } to{
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg);
+    }
+  }
+  @keyframes spinRevert {
+    from{
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    } to{
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg);
+    }
+  }
+
